@@ -2,13 +2,13 @@
 using namespace std;
 
 struct Node {
-    int data;
+    int dataa;
     Node* next;
 };
 
 void tambahNode(Node** head, int nilai) {
     Node* newNode = new Node();
-    newNode->data = nilai;
+    newNode->dataa = nilai;
     newNode->next = NULL;
 
     if (*head == NULL) {
@@ -32,14 +32,14 @@ void cariTerbesar(Node* head) {
     int urutan = 1;
     
     
-    int terbesar = head->data;
+    int terbesar = head->dataa;
 
     while (temp != NULL) {
         
-        cout << "Data ke " << urutan << ": " << temp->data << endl;
+        cout << "Data ke " << urutan << ": " << temp->dataa << endl;
 
         if (temp->data > terbesar) {
-            terbesar = temp->data;
+            terbesar = temp->dataa;
         }
 
         temp = temp->next;
