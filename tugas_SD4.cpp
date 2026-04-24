@@ -19,7 +19,7 @@ void insertDepan(Node** head, int newData) {
 
 void insertBelakang(Node** head, int newData) {
     Node* newNode = new Node();
-    newNode->data = newData;
+    newNode->dataa = newData;
     newNode->next = NULL;
 
     if (*head == NULL) {
