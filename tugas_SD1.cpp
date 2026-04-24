@@ -6,7 +6,6 @@ struct Node {
     Node* next;
 };
 
-
 void tambahNode(Node** head, int nilai) {
     Node* newNode = new Node();
     newNode->dataa = nilai;
